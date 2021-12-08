@@ -123,6 +123,12 @@ return weight * 0.05;
     return weight * 0.03;
   }else if(weight > 15 && age >=1){
     return weight * 0.02;
+  }else if(age <=1 && age >= 0.166 && age <= 0.333){
+    return weight * .10;
+  }else if(age <= 1 && age >= 0.333 && age <= 0.583){
+    return weight * 0.05;
+  }else if(age >= 0.583 && age <=1){
+    return weight * 0.04;
   }
 
 }
@@ -151,7 +157,12 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 function game(user, computer){
-  /*add your code here*/
+  if(user = 'paper && computer = rock'){
+return 'you win!';
+  }else if(user = 'scissors && computer = rock'){
+    return 'you lose!';
+  }else if(user = 'paper && computer = paper'){
+    return 'a tie!';
 }
 
 
